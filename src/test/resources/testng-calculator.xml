@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator test suite">
+    <test name="runAllExceptCheckWithDoubles" parallel="methods" thread-count="10">
+        <classes>
+            <class name="tests.testNG.SumTests">
+                <methods>
+                    <exclude name="checkWithDoubles"></exclude>
+                </methods>
+            </class>
+            <class name="tests.testNG.SubTests"></class>
+            <class name="tests.testNG.MultTests"></class>
+            <class name="tests.testNG.DivTests"></class>
+            <class name="tests.testNG.PowTests"></class>
+            <class name="tests.testNG.SqrtTests"></class>
+            <class name="tests.testNG.TgTests"></class>
+            <class name="tests.testNG.CtgTests"></class>
+            <class name="tests.testNG.CosTests"></class>
+            <class name="tests.testNG.SinTests"></class>
+        </classes>
+    </test>
+</suite>
